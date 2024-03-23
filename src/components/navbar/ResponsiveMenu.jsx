@@ -5,24 +5,28 @@ import { FaUserCircle } from 'react-icons/fa';
 
 const navbarLinks = [
   {
+    id: 1,
     name: 'Home',
     link: '/',
   },
   {
+    id: 2,
     name: 'About',
     link: '/about',
   },
   {
+    id: 3,
     name: 'Blogs',
     link: '/blogs',
   },
   {
+    id: 4,
     name: 'Best Places',
     link: '/places',
   },
 ];
+// eslint-disable-next-line react/prop-types
 const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
-  console.log("showMenu", showMenu)
   return (
     <div
       className={`${
@@ -45,14 +49,14 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
 
         <nav className="mt-12">
           <ul className="space-y-4 text-xl">
-            {navbarLinks.map(({ name, link }) => (
-              <li>
+            {navbarLinks.map((navbarLink) => (
+              <li key={navbarLink.id}>
                 <Link
-                  to={link}
+                  to={navbarLink.link}
                   onClick={() => setShowMenu(false)}
                   className="mb-5 inline-block"
                 >
-                  {name}
+                  {navbarLink.name}
                 </Link>
               </li>
             ))}
