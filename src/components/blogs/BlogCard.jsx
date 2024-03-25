@@ -4,19 +4,20 @@ import { Link } from 'react-router-dom';
 
 const BlogCard = ({ image, date, title, description, author }) => {
   return (
-    <Link
+    <>
+       <Link
       to={`/blogs/${title}`}
       onClick={() => {
         window.scroll(0, 0);
       }}
       state={{ image, date, title, description, author }}
     >
-      <div className="p-4 shadow-lg transition-all duration-500 hover:shadow-xl">
+      <div className="p-4 shadow-lg transition-all duration-500 hover:shadow-xl dark:bg-slate-950 dark:text-white">
         <div className="overflow-hidden">
           <img
             src={image}
-            alt=""
-            className="mx-auto h-[250px] w-full object-cover transition-all duration-700 hover:skew-x-2 hover:scale-100"
+            alt="No Image"
+            className="mx-auto h-[250px] w-full object-cover transition duration-700 hover:skew-x-2 hover:scale-110"
           />
         </div>
         <div className="flex justify-between pt-2 text-slate-600 ">
@@ -29,6 +30,8 @@ const BlogCard = ({ image, date, title, description, author }) => {
         </div>
       </div>
     </Link>
+    </>
+   
   );
 };
 

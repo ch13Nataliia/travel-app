@@ -5,12 +5,10 @@ const BannerImg = ({ img }) => {
     backgroundImage: `url(${img})`,
     backgroundSize: 'cover',
     backgoundPosition: 'center',
-    ehight: '400px',
+    height: '400px',
   };
   return (
-    <div data-aos="zoom-in" className="h-[400px] w-full" style={bgImage}>
-      BannerImg
-    </div>
+    <div data-aos="zoom-in" className="h-[400px] w-full" style={bgImage}></div>
   );
 };
 

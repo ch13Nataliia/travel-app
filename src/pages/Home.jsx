@@ -4,9 +4,13 @@ import BannerImg from '../components/BannerImg/BannerImg';
 import Hero from '../components/hero/Hero';
 import Places from '../components/places/Places';
 import BannerPic from '../assets/cover-women.jpg'
+import Banner2 from "../assets/travel-cover2.jpg";
 import Blogs from './Blogs';
 import Banner from '../components/banner/Banner';
-// import BannerPic from '../assets/cover-women.jpg'
+import Testimonial from '../components/testimonial/Testimonial';
+
+
+
 
 const Home = () => {
   return (
@@ -28,6 +32,8 @@ const Home = () => {
         <BannerImg img={BannerPic}/>
         <Blogs />
         <Banner />
+        <BannerImg img={Banner2} />
+        <Testimonial />
       </div>
     </>
   );
