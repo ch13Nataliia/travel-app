@@ -4,7 +4,7 @@ import BlogsComp from "../components/blogs/BlogsComp"
 
 const Blogs = () => {
   return (
-    <div className="min-h-40 pt-1 bg-gray-100">
+    <div className=" min-h-[650px] pt-20 bg-gray-100">
       <BlogsComp />
     </div>
   )

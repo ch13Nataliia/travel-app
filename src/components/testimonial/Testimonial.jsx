@@ -41,10 +41,10 @@ const Testimonial = () => {
             </p>
           </div>
           {/* testimonial section */}
-          <div
+          <div 
             data-aos="zoom-in"
             data-aos-duration="300"
-            className="grid grid-cols-1 max-w-[800px] mx-auto gap-6"
+            className="grid grid-cols-1 max-w-[800px] mx-auto gap-6 "
           >
             <div className="flex flex-row">
               {testimonialData.map(({ id, name, text, img }) => {
