@@ -1,18 +1,23 @@
-// import React from 'react'
-import  NatureVid  from '../assets/video/NatureVid.mp4'
-import BannerImg from '../components/BannerImg/BannerImg';
-import Hero from '../components/hero/Hero';
-import Places from '../components/places/Places';
-import BannerPic from '../assets/cover-women.jpg'
+import React from "react";
+import Hero from "../components/hero/Hero";
+import NatureVid from "../assets/video/main.mp4";
+import BlogsComp from "../components/blogs/BlogsComp";
+import Places from "../components/places/Places";
+import Testimonial from "../components/testimonial/Testimonial";
+import Banner from "../components/banner/Banner";
+import BannerImg from "../components/BannerImg/BannerImg";
+import BannerImg1 from "../assets/cover-women.jpg";
 import Banner2 from "../assets/travel-cover2.jpg";
-import Blogs from './Blogs';
-import Banner from '../components/banner/Banner';
-import Testimonial from '../components/testimonial/Testimonial';
-
+import OrderPopup from "../components/orderPopup/OrderPopup";
 
 
 
 const Home = () => {
+  const [orderPopup, setOrderPopup] = React.useState(false);
+
+  const handleOrderPopup = () => {
+    setOrderPopup(!orderPopup);
+  };
   return (
     <>
       <div>
@@ -26,14 +31,14 @@ const Home = () => {
             <source src={NatureVid} type="video/mp4" />
           </video>
           <Hero />
-          
         </div>
-        <Places />
-        <BannerImg img={BannerPic}/>
-        <Blogs />
+        <Places handleOrderPopup={handleOrderPopup} />
+        <BannerImg img={BannerImg1} />
+        <BlogsComp />
         <Banner />
         <BannerImg img={Banner2} />
         <Testimonial />
+        <OrderPopup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
       </div>
     </>
   );
