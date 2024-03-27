@@ -1,6 +1,6 @@
 // import React from 'react'
 
-const BannerImg = (img) => {
+const BannerImg = ({img}) => {
   const bgImage = {
     backgroundImage: `url(${img})`,
     backgroundSize: 'cover',

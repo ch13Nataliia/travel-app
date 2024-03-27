@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import Logo from "../../assets/logo.png";
 import { NavLink, Link } from "react-router-dom";
 import { FaCaretDown } from "react-icons/fa";
@@ -39,7 +39,7 @@ const DropdownLinks = [
   },
 ];
 
-const Navbar = ({ handleOrderPopup }) => {
+const Navbar = ( {handleOrderPopup} ) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {

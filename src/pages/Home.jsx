@@ -4,11 +4,17 @@ import NatureVid from "../assets/video/main.mp4";
 import BlogsComp from "../components/blogs/BlogsComp";
 import Places from "../components/places/Places";
 import Testimonial from "../components/testimonial/Testimonial";
+
+
 import Banner from "../components/banner/Banner";
 import BannerImg from "../components/BannerImg/BannerImg";
-import BannerImg1 from "../assets/cover-women.jpg";
-import Banner2 from "../assets/travel-cover2.jpg";
-import OrderPopup from "../components/orderPopup/OrderPopup";
+
+
+import Banner1 from "../assets/cover-women.jpg";
+import Banner2 from '../assets/travel-cover2.jpg'
+
+
+import OrderPopup from '../components/orderPopup/OrderPopup';
 
 
 
@@ -33,7 +39,7 @@ const Home = () => {
           <Hero />
         </div>
         <Places handleOrderPopup={handleOrderPopup} />
-        <BannerImg img={BannerImg1} />
+        <BannerImg img={Banner1} />
         <BlogsComp />
         <Banner />
         <BannerImg img={Banner2} />

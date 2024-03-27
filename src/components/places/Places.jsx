@@ -66,7 +66,7 @@ const PlacesData = [
     type: 'Cultural Relax',
   },
 ];
-const Places = () => {
+const Places = ({handleOrderPopup}) => {
   return (
     <div className="bg-gray-50 py-10">
       <div className="container">
@@ -76,7 +76,9 @@ const Places = () => {
         </h1>
         <div className='grid frod-cols-1 sm:grid-cols-2 md:grid:cols-3 gap-4 '>
           {PlacesData.map((item, index) => (
-            <PlacesCard key={index} {...item} />
+            <PlacesCard 
+            handleOrderPopup={handleOrderPopup}
+            key={index} {...item} />
           ))}
         </div>
       </div>
