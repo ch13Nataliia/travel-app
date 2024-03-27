@@ -12,9 +12,9 @@ import NatureVid2 from '../../assets/video/footer.mp4';
 import FooterLogo from '../../assets/logo.png';
 
 const FooterLinks = [
-  { title: 'Home', link: '/' },
-  { title: 'About', link: '/about' },
-  { title: 'Best Places', link: '/best-places' },
+  {  title: 'Home', link: '/' },
+  {  title: 'About', link: '/about' },
+  {  title: 'Best Places', link: '/best-places' },
   { title: 'Blogs', link: '/blogs' },
 ];
 const Footer = () => {
@@ -80,7 +80,7 @@ const Footer = () => {
                 <ul className="flex flex-col gap-3">
                   {FooterLinks.map((link) => (
                     <>
-                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
+                      <li  className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
                         <Link
                           to={link.link}
                           onClick={() => {
@@ -108,7 +108,9 @@ const Footer = () => {
                 <ul className="flex flex-col gap-3">
                   {FooterLinks.map((link) => (
                     <>
-                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
+                      <li
+                     
+                      className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
                         <Link
                           to={link.link}
                           onClick={() => {
@@ -137,7 +139,9 @@ const Footer = () => {
                 <ul className="flex flex-col gap-3">
                   {FooterLinks.map((link) => (
                     <>
-                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
+                      <li 
+                       
+                      className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
                         <Link
                           to={link.link}
                           onClick={() => {

@@ -66,6 +66,7 @@ const PlacesData = [
     type: 'Cultural Relax',
   },
 ];
+
 const Places = ({handleOrderPopup}) => {
   return (
     <div className="bg-gray-50 py-10">

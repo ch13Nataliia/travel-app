@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { NavbarLinks } from './Navbar';
 import { FaUserCircle } from 'react-icons/fa';
 
-
 // eslint-disable-next-line react/prop-types
 const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
   return (
@@ -29,7 +28,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
         <nav className="mt-12">
           <ul className="space-y-4 text-xl">
             {NavbarLinks.map((navbarLink) => (
-              <li key={navbarLink.id}>
+              <li key={navbarLink.name}>
                 <Link
                   to={navbarLink.link}
                   onClick={() => setShowMenu(false)}
